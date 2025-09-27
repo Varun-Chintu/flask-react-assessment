@@ -1,3 +1,87 @@
+# Project Name
+
+**Flask-React Comment API** (replace with your actual project name)
+
+## Description
+
+A brief overview of your project. Example:
+
+> This project is a simple task management backend using Flask with CRUD APIs for comments. It also integrates with a React frontend for task management and comments.
+
+---
+
+## Features
+
+* RESTful API for comments: Create, Read, Update, Delete (CRUD)
+* Task management APIs
+* Integrated Flask backend with React frontend (if applicable)
+* In-memory data storage for demo purposes
+
+---
+
+## Tech Stack
+
+* **Backend:** Python, Flask, Flask-CORS
+* **Frontend:** React (if used)
+* **Dependencies:** See `Pipfile` for backend packages
+* **Version Control:** Git & GitHub
+
+---
+
+## Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Varun-Chintu/flask-react-assessment.git
+cd flask-react-assessment/src/apps/backend
+```
+
+### 2️⃣ Setup Python virtual environment with Pipenv
+
+```bash
+pipenv --python 3.11
+pipenv install
+pipenv shell
+```
+
+### 3️⃣ Run the server
+
+```bash
+set PYTHONPATH=.
+python server.py
+```
+
+Server will start on: `http://127.0.0.1:5000`
+
+---
+
+## API Endpoints
+
+### Comments API
+
+* **Create Comment:** `POST /api/comments`
+* **Get All Comments:** `GET /api/comments`
+* **Update Comment:** `PUT /api/comments/<comment_id>`
+* **Delete Comment:** `DELETE /api/comments/<comment_id>`
+
+**Request/Response Example:**
+
+```json
+POST /api/comments
+{
+  "task_id": 123,
+  "text": "This is a comment"
+}
+```
+
+---
+
+## Notes
+
+* Temporal server is required for some backend tasks. Ensure it’s running if needed.
+* This project uses in-memory storage for demo purposes, so data will reset on server restart.
+
 # Flask React Template
 
 Boilerplate project for Flask, React & MongoDB based projects. This README documents the steps necessary to get the application up and running, and various components of the application.
